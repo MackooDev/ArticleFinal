@@ -35,7 +35,7 @@ public class RestApi {
     }
 
     @GetMapping("/allArticleByLocalDateSortDesc")
-    public List<ArticleEntity> getAllArticleSortDesc(){
+    public List<ArticleEntity> getAllArticleSortByLocalDateDesc(){
         log.info("Pobieram wszystkie artykuły posortowane po dacie malejąco");
         return articleRepository.findByOrderByLocalDateTimeDesc();
     }

@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum ErrorCode {
-    NO_SUCH_ARTICLE_FOUND(2000, "Nie znaleziono nauczyciela o podanym id");
+    NO_SUCH_ARTICLE_FOUND(2000, "Nie znaleziono publikacji o podanym id");
 
     private final int code;
     private final String description;
